@@ -62,7 +62,17 @@ const styles = StyleSheet.create({
     inputContainer: { flexDirection: 'row', alignItems: 'center', marginBottom: 10 },
     icon: { marginRight: 10 },
     label: { fontSize: 16 },
-    input: { flex: 1, borderWidth: 1, padding: 10, borderRadius: 5, elevation: 2 },
+    input: { 
+        flex: 1, 
+        padding: 10, 
+        borderRadius: 5,
+        backgroundColor: 'white',
+        elevation: 3, 
+        shadowColor: '#A9A9A9', 
+        shadowOffset: { width: 0, height: 2 }, 
+        shadowOpacity: 0.5, 
+        shadowRadius: 4, 
+      },
     forgotLink: { color: 'orange', marginLeft: 10 },
     button: { backgroundColor: '#FED000', padding: 10, borderRadius: 5, alignItems: 'center', marginVertical: 10 },
     buttonPressed: {

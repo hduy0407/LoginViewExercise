@@ -17,6 +17,9 @@ export function SignupView({navigation}) {
   
     return (
         <View style={styles.container}>
+            <TouchableOpacity onPress={() => navigation.goBack()}>
+                <Text style={styles.backArrow}>←</Text>
+            </TouchableOpacity>
             
             <Text style={styles.title}>Create Account</Text>
 
@@ -85,10 +88,15 @@ export function SignupView({navigation}) {
       icon: { marginRight: 10 },
       label: { fontSize: 16 },
       input: { 
-        flex: 1,
-        borderWidth: 1, 
+        flex: 1, 
         padding: 10, 
-        borderRadius: 5 
+        borderRadius: 5,
+        backgroundColor: 'white',
+        elevation: 3, 
+        shadowColor: '#A9A9A9', 
+        shadowOffset: { width: 0, height: 2 }, 
+        shadowOpacity: 0.5, 
+        shadowRadius: 4, 
       },
       button: { backgroundColor: '#FED000', padding: 10, borderRadius: 5, alignItems: 'center', elevation: 2 },
       buttonText: { color: 'white', fontSize: 16 },
