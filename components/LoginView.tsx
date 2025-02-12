@@ -9,7 +9,6 @@ export function LoginView({navigation}) {
 
     const handleLogin = () => {
         console.log('Email:',email)
-        console.log('Password:',password)
     } 
 
     return (

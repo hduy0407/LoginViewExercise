@@ -11,8 +11,6 @@ export function SignupView({navigation}) {
     const handleSignup = () => {
         console.log('Full Name:', fullName);
         console.log('Email:', email);
-        console.log('Password:', password);
-        console.log('Confirm Password:', confirmPassword);
     };
   
     return (
